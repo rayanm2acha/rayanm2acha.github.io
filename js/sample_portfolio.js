@@ -7,8 +7,8 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
-// This function displays the sixth image in the slideshow when the page loads
-var slideIndex = 6;
+// This function displays the first image in the slideshow when the page loads
+var slideIndex = 1;
 showSlides(slideIndex);
 
 // This function changes the slide when the left or right arrows are clicked
