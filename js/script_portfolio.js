@@ -1,10 +1,20 @@
-// These functions open and close the contact form
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
 
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+    
+    // sanitize inputs
+    $name = strip_tags($name);
+    $email = strip_tags($email);
+    $message = strip_tags($message);
 }
 
 // This function displays the first image in the slideshow when the page loads

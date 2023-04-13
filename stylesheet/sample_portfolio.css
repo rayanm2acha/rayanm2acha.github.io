@@ -38,6 +38,10 @@ h1:hover {
     transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
+h6 {
+    text-align: center;
+}
+
 /* Styling for Portfolio Title Text */
 .white-text {
     color: #fff;/* This is used to change the color of the Portfolio Title text */
