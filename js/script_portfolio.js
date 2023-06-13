@@ -1,3 +1,8 @@
+// This function displays the first image in the slideshow when the page loads
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
@@ -17,9 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = strip_tags($message);
 }
 
-// This function displays the first image in the slideshow when the page loads
-var slideIndex = 1;
-showSlides(slideIndex);
 
 // This function changes the slide when the left or right arrows are clicked
 function plusSlides(n) {
